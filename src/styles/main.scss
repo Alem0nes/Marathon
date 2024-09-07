@@ -26,6 +26,12 @@
     .container{
         position: relative;
         padding-top: 70px;
+
+        h1{
+            font-size:2em;
+            margin-top: 1em;
+            color: #ffffff;
+        }
     }
 
     &::before{
@@ -43,12 +49,6 @@
         height: 200px;
     }
 
-    p{
-        font-size:2em;
-        margin-top: 1em;
-        color: #ffffff;
-    }
-
     &__info{
         padding: 16px 24px;
         background-color: #ffffff;
@@ -57,42 +57,97 @@
         &--details{
             display: flex;
             gap: 50px;
+            margin-left: 10px;
 
             button{
                 font-size: 1.2rem;
+                width: 200px;
+                margin-left: 50px;
+                background-color: #5757af;
+                border: none;
+                color: #ffffff;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: #3d3d76;
+                }
             }
 
             &-item{
 
-                b{
+                h2{
                     display: block;
                     text-align: left;
                     font-size: 1.2rem;
+                }
+
+                p{
+                    display: block;
+                    text-align: left;
+                    font-size: 1rem;  
+                    color: black;
+                    
                 }
             }
         }
     }
 }
 
+.event__thedublin{
+    background-image: linear-gradient(#473b8f,#5b57a2);
+}
 
+.event_good{
+    background-image: linear-gradient(#5b57a2,#5d6cb1);
+}
 
-@media (max-width: 640px) {
+.event_medical{
+    background-image: linear-gradient(#5d6cb1,#51a8d6);
+}
 
-    .hero{
-        height: 500px;
-    }
+.event{
+    padding: 100px 0;
+    color: #ffffff;
 
     .container{
-        width: 80%;
-        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        gap:50px;
 
-        img{
-            height: 20vw;
+        &__invet{
+            flex-direction: row-reverse;
         }
+    }
+
+    &__description{
+
+
+        &--title{
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        &--details{
+            font-size: 0.875rem;
+            margin-top: 10px;
+        }
+    }
+
+    &__img{
+        max-width: 300px;
     }
 }
 
-@media (max-width:1024px) {
+footer{
+    width: 100%;
+    background-color: #473b8f;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+
+}
+
+@media (max-width: 1024px) {
     
     .container{
         width: 80%;
@@ -100,6 +155,76 @@
         img{
             height: 20vw;
         }
+    }
+
+    .hero{
+        &__info{
+            &--details{
+                button{
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+
+    .hero{
+        height: 750px;
+        padding-top: 25px;
+        
+        &__info{
+            padding: 16px 24px;
+            background-color: #ffffff;
+            margin: 0px;
+            margin-top: 30px;   
+    
+            &--details{
+                display: block;
+                gap: 0px;
+                margin-left:0px;
+                text-align: center;
+                margin-bottom: 10px;
+    
+                button{
+                    font-size: 25px;
+                    width: 200px;
+                    margin-left: 0px;
+                }
+
+                &-item{
+
+                    h2{
+                        text-align: center;
+                        font-size: 20px;
+                        margin-bottom: 5px;
+                    }
+
+                    p{
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .event{
+        .container{
+            display: block;
+
+            img{
+                width: 100%;
+                height:auto
+
+            }
+            }
+
+
+        &__img{
+            margin-top: 50px;
+        }    
     }
 }
 

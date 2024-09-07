@@ -5,25 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img src="./img/logo-2022.png" alt="">
-            <p>Irish life Dublin marathon in 66d 21h 50m 45s</p>
+            <h1>Irish life Dublin marathon in <span id="contador">12D 4h 52m 50s</span></h1>
+            
             <div class="hero__info">
                 <ul class="hero__info--details">
                     <li class="hero__info--details-item">
-                        <b>Location</b>
-                        Dublin - City Center
+                        <b><h2>Location</b></h2>
+                        <p>Dublin - City Center</p>
                     </li>
                     <li class="hero__info--details-item">
-                        <b>Price</b>
-                        €20.00 
+                        <h2><b>Price</b></h2>
+                        <p>€20.00</p>
                     </li>
                     <li class="hero__info--details-item">
-                        <b>When</b>
-                        October 27th 2024 at 8:45am
+                        <h2> <b>When</b></h2>
+                        <p>October 27th 2024 at 8:45am</p>
                     </li>
                     <button>Subscribe</button>
                 </ul>
@@ -31,6 +33,43 @@
             </div>
         </div>  
     </header>
+    <section class="event event__thedublin" > 
+        <div class="container" data-aos="fade-right"    >
+            <div class="event__description">
+                <h2 class="event__description--title">Irish Life Dublin Marathon set to hit the City Streets on October 27th</h2>
+                <p class="event__description--details">The Dublin Marathon organisers and Dublin City Council have announced that the start and finish location of the Irish Life Dublin Marathon will be in the city centre on Sunday, October 27th.</br>
+                    Both parties have been working together to develop a feasible solution to make this possible while ensuring minimal disruption to the area over the October bank holiday weekend.</br>
+                    The Irish Life Dublin Marathon will start on Lesson Street Lower and finish on Mount Street Upper, remaining within the Dublin 2 area and ensuring the route will run through the city centre streets.</p>
+            </div>
+            <img class="event__img" src="./img/course_details.jpg" alt="aaa">
+        </div>
+    </section>
+    <section class="event event_good" > 
+        <div class="container container__invet" data-aos="fade-left">
+            <div class="event__description">
+                <h2 class="event__description--title">Good for age standars</h2>
+                <p class="event__description--details">Members of Athletics Ireland, Northern Ireland, can apply for a good-for-age place in the Irish Life Dublin Marathon from Monday, April 15th, to Friday, April 26th.</br>
+                    These places are reserved for members who have achieved qualifying times within a specified period as agreed between Athletics Ireland, Northern Ireland and the Dublin Marathon organisers.
+</br>
+Results from the Irish Life Dublin Marathon 2022 and 2023 can be used to apply.</p>
+            </div>
+            <img class="event__img" src="./img/454329953_1532628690688077_4916948145572068288_n.jpg" alt="aaa">
+        </div>
+    </section>
+    <section class="event event_medical" > 
+        <div class="container" data-aos="fade-right" >
+            <div class="event__description">
+                <h2 class="event__description--title">Medical advice</h2>
+                <p class="event__description--details">There are enormous health benefits to participating in and training for the Irish Life Dublin Marathon and the Irish Life Race Series. However, it is also a huge physical challenge, which requires a sensible and safe approach. It is essential that you are properly prepared and that you follow a carefully structured training programme that will help you complete each of the race series and also the marathon (if you are taking part) while also safeguarding your health.</br>
+                    We advise that you do not participate on any race day unless you have achieved the recommended mileage in your training runs and urge you to take the time to understand issues surrounding hydration, fuel and any medications you might be taking.</p>
+            </div>
+            <img class="event__img" src="./img/452048253_884664403485523_8801341856497420578_n.jpeg" alt="aaa">
+        </div>
+    </section>
+    <footer>
+        <p>Renan Hernandes© 2024</p>
+    </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="scripts/main.js"></script>
 </body>
 </html>
