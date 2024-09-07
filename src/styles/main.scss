@@ -121,7 +121,6 @@
 
     &__description{
 
-
         &--title{
             font-size: 1.25rem;
             font-weight: bold;
@@ -211,16 +210,16 @@ footer{
     }
 
     .event{
+        padding: 25px 0;
+
         .container{
             display: block;
 
             img{
                 width: 100%;
-                height:auto
-
+                height:auto;
             }
-            }
-
+        }
 
         &__img{
             margin-top: 50px;
