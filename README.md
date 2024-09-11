@@ -1,6 +1,6 @@
 # Marathon
 
-Marathon is a simple landpage template designed to invite people to subcription to an event, with visually appealing and interactive manner. 
+Marathon is a simple landing page template designed to invite people to subcription to an event, with visually appealing and interactive manner. 
 The project demonstrates modern web development techniques, emphasizing responsive design and smooth user experience.
 
 This project was created as part of my portfolio, demonstrating my skills in building user-friendly and visually engaging websites.
